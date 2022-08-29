@@ -10,5 +10,27 @@
 
 
 Algoritmo EJERCICIO_4_GUIA_2_1_EXTRA
+	definir tarifa, horas Como Entero
+	Definir litrosGastados, totalLitros, total, totalHoras Como Real
 	
+	escribir "ingrese las horas de alquiler "
+	leer horas
+	
+	si (horas < 2 ) Entonces
+		tarifa = 400 
+		escribir "usted debe abonar $ ", tarifa
+	sino 
+		escribir "ingrese la cantidad de litros gastados"
+		leer litrosGastados
+		escribir "ingrese la cantidad de horas que lo alquilo "
+		leer horas
+		
+		totalLitros = (litrosGastados*40)
+		totalHoras = ((horas*60)*5.20)
+		total = (totalHoras + totalLitros)
+		escribir "$" totalLitros " + " "$" totalHoras
+		escribir "su total es de ", total
+		
+		
+	FinSi
 FinAlgoritmo
