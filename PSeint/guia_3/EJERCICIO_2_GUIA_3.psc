@@ -6,7 +6,7 @@
 Algoritmo EJERCICIO_2_GUIA_3
 	
 	definir num Como Real
-	definir imp Como Logico
+
 	
 	escribir "ingrese un numero: "
 	leer num
