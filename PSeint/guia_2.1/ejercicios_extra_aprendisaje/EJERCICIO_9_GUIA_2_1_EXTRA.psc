@@ -6,4 +6,18 @@
 
 Algoritmo EJERCICIO_9_GUIA_2_1_EXTRA
 	
+	definir anho Como Entero
+	
+	Escribir "ingrese un año "
+	leer anho
+	
+	si (anho mod 4==0) Entonces
+		si ((anho mod 100<>0) o (anho mod 400==0))
+			Escribir "el año que ingreso " anho " es un año bisciesto"
+		SiNo
+			Escribir "el año " anho " no es bisciesto"
+		FinSi
+	SiNo
+		Escribir "el año " anho " no es bisciesto"
+	FinSi
 FinAlgoritmo
