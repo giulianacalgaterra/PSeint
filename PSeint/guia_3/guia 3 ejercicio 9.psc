@@ -1,3 +1,5 @@
+
+
 Algoritmo Cripto
 	Definir Frase como Cadena
 	Escribir "Ingrese una frase a codificar"

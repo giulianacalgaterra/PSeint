@@ -19,5 +19,62 @@
 //hora. Realizar un menú de opciones para poder elegir el tipo de contrato que tiene un
 //empleado.
 Algoritmo EJERCICIO_12_GUIA_2_1_EXTRA
+	Definir opciones,montoTotal,horasTrabajadas,precioHora, salarioFijo, comision, horasExtras, salMasCom Como Real
+	
+	escribir"ingrese modalidad de sueldo"
+	Escribir "1- comision"
+	escribir "2- salario fijo"
+	Escribir "3- salario fijo + comision "
+	leer opciones
+	
+	si (opciones = 1) Entonces
+		Escribir "ingrese el monto total de las ventas realizadas en la semana "
+		leer montoTotal
+		comision = (montoTotal*40)/100
+		escribir "su salario por comision es de $ " comision
+	SiNo
+		si (opciones = 2) Entonces
+			Escribir "ingrese el valor de horas trabajadas en la semana"
+			leer horasTrabajadas
+			Escribir "ingrese el valor del trabajo por hora "
+			leer precioHora
+			si (horasTrabajadas >40) Entonces
+				horasExtras = (horasTrabajadas-40)
+				salarioFijo =  (horasTrabajadas*precioHora) + (horasExtras*(precioHora/2))
+				escribir "su salario fijo es de $ " salarioFijo
+				
+			SiNo
+				salarioFijo = (horasTrabajadas*precioHora)
+			FinSi
+		SiNo
+			si (opciones = 3) Entonces
+				Escribir "ingrese el valor de paga por hora "
+				leer precioHora
+				escribir "ingrese el valor de las horas trabajadas en la semana"
+				leer horasTrabajadas
+				Escribir "ingrese el monto total de las ventas realizadas en la semana "
+				leer montoTotal
+				
+				si (horasTrabajadas <40) Entonces
+					comision = (montoTotal*25)/100
+					salarioFijo = (horasTrabajadas*precioHora)
+					salMasCom = (comision + salarioFijo)
+					Escribir "su salariofijo + comision es de " salMasCom
+				SiNo
+					horasExtras = (horasTrabajadas-40)
+					comision = (montoTotal*25)/100
+					salarioFijo =  (horasTrabajadas*precioHora) - (horasExtras*precioHora)
+					salMasCom = (comision + salarioFijo)
+					Escribir "su salariofijo + comision es de " salMasCom
+				FinSi
+				
+				
+				
+				
+			FinSi
+		FinSi
+	FinSi
+	
+	
 	
 FinAlgoritmo
