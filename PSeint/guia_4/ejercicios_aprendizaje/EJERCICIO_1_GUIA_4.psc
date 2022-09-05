@@ -1,3 +1,7 @@
+//Arreglos: Vectores
+//Realizar un programa que rellene un vector con 5 valores ingresados por el usuario y los
+//muestre por pantalla.
+
 Algoritmo EJERCICIO_1_GUIA_4
 	Definir vector, i, dato Como Entero
 	Dimension vector[5]

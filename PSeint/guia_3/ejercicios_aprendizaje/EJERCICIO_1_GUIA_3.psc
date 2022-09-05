@@ -2,8 +2,6 @@
 //	pediremos al usuario los dos números para pasárselos a la función. Después la función
 //	calculará la suma y lo devolverá para imprimirlo en el algoritmo.
 
-
-
 Algoritmo EJERCICIO_1_GUIA_3
 	Definir num1, num2 Como Entero
 	
